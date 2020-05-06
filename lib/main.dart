@@ -40,11 +40,14 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text('Hello World'),
         ),
-        body: Center(
+        body: Container(
+          alignment: Alignment(-1.0, 0.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             HelloFromFirebase(),
             IconButton(
+              alignment: Alignment.center,
               icon: Icon(Icons.radio_button_checked),
               onPressed: () => {
                 Navigator.push(
