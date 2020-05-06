@@ -3,27 +3,27 @@ import 'package:amia_flutter/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class HomeScreen extends StatelessWidget {
+class NielsonScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: SharedAppBar(title: 'AMIA Demo'),
+      appBar: SharedAppBar(title: 'Grids, Lists, and Wraps'),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             SharedActionButton(
-              title: 'Dashboard',
-              onPressed: () => Get.to(DashboardScreen()),
+              title: 'Grid',
+              onPressed: () => Get.to(GridScreen()),
             ),
             SharedActionButton(
-              title: "Check-In",
-              onPressed: () => Get.to(CheckinScreen()),
+              title: "List",
+              onPressed: () => Get.to(ListScreen()),
             ),
-            SharedFirebaseHello(),
+            
             SharedActionButton(
-              title: "Grids, LIsts, and Wraps",
-              onPressed: () => Get.to(NielsonScreen()),
+              title: "Wrap",
+              onPressed: () => Get.to(WrapScreen()),
             ),
           ],
         ),
